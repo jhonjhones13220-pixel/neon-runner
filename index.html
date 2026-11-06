@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>NEON RUNNER</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud" class="hidden">
+  <div class="l"><div id="score">0</div><div class="sub"><span id="dist">0</span> m</div></div>
+  <div class="r"><div class="chip"><i class="coin"></i><span id="coins">0</span></div><div class="sub">Recorde <span id="best">0</span></div></div>
+</div>
+<section id="menu" class="panel">
+  <h1 class="logo"><span>NEON</span><span>RUNNER</span></h1>
+  <p class="tag">Corra pela cidade que nunca apaga</p>
+  <button id="play">JOGAR</button>
+  <p class="help">Deslize ← → para mudar de faixa<br>↑ para pular · ↓ para deslizar</p>
+  <p class="rec">Recorde: <b id="best2">0</b></p>
+</section>
+<section id="over" class="panel hidden">
+  <h2>GAME OVER</h2>
+  <div class="stats">
+    <div><small>Pontos</small><b id="fs">0</b></div>
+    <div><small>Distância</small><b id="fd">0 m</b></div>
+    <div><small>Moedas</small><b id="fc">0</b></div>
+  </div>
+  <p id="newrec" class="hidden">Novo recorde!</p>
+  <button id="retry">TENTAR NOVAMENTE</button>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
