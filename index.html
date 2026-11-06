@@ -14,12 +14,13 @@
 <div id="hud" class="hidden">
   <div class="l"><div id="score">0</div><div class="sub"><span id="dist">0</span> m</div></div>
   <div class="r"><div class="chip"><i class="coin"></i><span id="coins">0</span></div><div class="sub">Recorde <span id="best">0</span></div></div>
-</div>
+<div id="ctl"><button id="bp" class="mini">PAUSAR</button><button id="bm" class="mini">SOM ON</button></div></div>
+<div id="pw"></div>
 <section id="menu" class="panel">
   <h1 class="logo"><span>NEON</span><span>RUNNER</span></h1>
   <p class="tag">Corra pela cidade que nunca apaga</p>
   <button id="play">JOGAR</button>
-  <p class="help">Deslize ← → para mudar de faixa<br>↑ para pular · ↓ para deslizar</p>
+  <p class="help">Deslize ← → para mudar de faixa<br>↑ para pular · ↓ para deslizar<br>Colete o escudo e o ímã na pista</p>
   <p class="rec">Recorde: <b id="best2">0</b></p>
 </section>
 <section id="over" class="panel hidden">
@@ -32,6 +33,7 @@
   <p id="newrec" class="hidden">Novo recorde!</p>
   <button id="retry">TENTAR NOVAMENTE</button>
 </section>
+<section id="pausep" class="panel hidden"><h2>PAUSADO</h2><button id="resume">CONTINUAR</button></section>
 <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 <script src="game.js"></script>
 </body>

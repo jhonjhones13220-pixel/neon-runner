@@ -25,3 +25,6 @@ h2{margin:0;font-family:'Orbitron';font-size:clamp(34px,10vw,64px);font-weight:9
 .stats small{font-size:15px;color:#a99;letter-spacing:.1em}
 .stats b{font-family:'Orbitron';font-size:26px;text-shadow:0 0 10px var(--cyan)}
 #newrec{margin:0;font-family:'Orbitron';color:#ffd24a;text-shadow:0 0 14px #ffb000;font-weight:800}
+#ctl{position:fixed;right:16px;bottom:calc(env(safe-area-inset-bottom) + 16px);display:flex;gap:10px;pointer-events:auto}
+button.mini{font-size:13px;padding:10px 16px;letter-spacing:.1em;box-shadow:0 0 12px var(--violet);border-color:var(--violet);opacity:.8}
+#pw{position:fixed;left:18px;top:calc(env(safe-area-inset-top) + 96px);font-family:'Orbitron',sans-serif;font-weight:800;font-size:16px;letter-spacing:.12em;color:var(--cyan);text-shadow:0 0 12px var(--cyan);pointer-events:none}
